@@ -31,11 +31,12 @@ public class RCTCapturePackage implements ReactPackage {
 
 
     @Override
-        public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
-             mModuleInstance = new RCTCaptureModule(reactApplicationContext,captureManager);
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
+        mModuleInstance = new RCTCaptureModule(reactApplicationContext,captureManager);
         return Arrays.<NativeModule>asList(
                 mModuleInstance
         );
+    }
 
         @Override
         public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {

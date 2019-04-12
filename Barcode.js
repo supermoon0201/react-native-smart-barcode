@@ -7,8 +7,7 @@
 
 
 import React, {
-    PropTypes,
-    Component,
+    Component
 } from 'react'
 import {
     View,
@@ -17,6 +16,8 @@ import {
     AppState,
     Platform,
 } from 'react-native'
+
+import PropTypes from 'prop-types'
 
 const BarcodeManager = Platform.OS == 'ios' ? NativeModules.Barcode : NativeModules.CaptureModule
 
@@ -33,7 +34,7 @@ export default class Barcode extends Component {
         scannerRectCornerColor: `#09BB0D`,
     }
 
-    /*static propTypes = {
+    static propTypes = {
         ...View.propTypes,
         onBarCodeRead: PropTypes.func.isRequired,
         barCodeTypes: PropTypes.array,
@@ -43,7 +44,7 @@ export default class Barcode extends Component {
         scannerRectLeft: PropTypes.number,
         scannerLineInterval: PropTypes.number,
         scannerRectCornerColor: PropTypes.string,
-    }*/
+    }
 
     render() {
         return (

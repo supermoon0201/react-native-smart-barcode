@@ -33,7 +33,7 @@ export default class Barcode extends Component {
         scannerRectCornerColor: `#09BB0D`,
     }
 
-    static propTypes = {
+    /*static propTypes = {
         ...View.propTypes,
         onBarCodeRead: PropTypes.func.isRequired,
         barCodeTypes: PropTypes.array,
@@ -43,7 +43,7 @@ export default class Barcode extends Component {
         scannerRectLeft: PropTypes.number,
         scannerLineInterval: PropTypes.number,
         scannerRectCornerColor: PropTypes.string,
-    }
+    }*/
 
     render() {
         return (

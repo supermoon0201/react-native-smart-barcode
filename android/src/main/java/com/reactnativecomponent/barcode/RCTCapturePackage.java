@@ -36,7 +36,6 @@ public class RCTCapturePackage implements ReactPackage {
         return Arrays.<NativeModule>asList(
                 mModuleInstance
         );
-        }
 
         @Override
         public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
